@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Analyzer Agent</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span>Dark Mode</span>
+      </div>
+      <h1>Email Analyzer Agent</h1>
+      <div class="input-group">
+        <label for="userInput" class="visually-hidden">User Input</label>
+        <!-- Update the textarea in public/index.html -->
+        <textarea
+          id="userInput"
+          placeholder="Enter your text here"
+          rows="4"
+          maxlength="10000"
+        ></textarea>
+
+        <button id="submitBtn">Submit</button>
+      </div>
+      <div id="charCount">0 characters</div>
+      <div id="output">
+        <div id="spinner" class="spinner hidden"></div>
+        <div id="outputText">Output will appear here...</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
